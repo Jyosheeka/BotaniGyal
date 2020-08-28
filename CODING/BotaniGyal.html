@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>BotaniGyal</title>
+  	<link href="BotaniGyal.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Martel:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <div id="mySidenav" class="sidenav">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+   <ul id="myMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">Home</a>
+    <button class="dropdown-btn">Your Part
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Your Part.html">How Can I Participate/Support?</a>
+  </div>
+  <button class="dropdown-btn">Our Part
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Our Part.html">Services/Products We Offer</a>
+  </div>
+    <a href="Further Reading.html">Further Reading</a>
+    <a href="Want More.html">Want More?</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776; Menu</span>
+
+
+  <div id="content-wrapper">
+     <!--title-->
+     <div class="header">BotaniGyal</div>
+
+     <div id="main-content-wrapper">
+     <!--left content-->
+     <div class="left-wrapper">
+       <div class="about">
+         <br>
+         <h2>What is Ethnobotany?</h2> <p>The study of bioregional plants and their practical uses through the traditional knowledge of local, indigenous culture and people.      </p>
+         <br>
+         <h2>What does it have to do with BIPOC?</h2><p> “Ethnobotanists are largely concerned with intellectual property rights and benefits sharing agreements. In the US, plant knowledge + agricultural knowledge in the form of oral traditions created by black and brown folks are largely uncredited. The lives and life work of black folks matter.” <a href="https://www.instagram.com/indyofficinalis/">-@indyofficinalis</a></p>
+         <br>
+         <h2>Why should we care?</h2><p> We cannot dismantle systemic racism without acknowledging the unpaid labor and uncredited work of POC in agricultural, foraging, and mycology practices. Especially right now, we have to honor POC that laid the foundation for our current understanding of plant and fungi edibility and usefulness.</p>
+         <br>
+          <h2>What do we do?</h2><p> As the popularity of urban agriculture, foraging, and homesteading increases especially during this pandemic where people have recently found the urge to be more self-sustaining, we want to use this platform to amplify the voices of our black and brown ancestors, who were often uncredited, overlooked, disenfranchised or exploited as well as promoting and encouraging modern-day farmers or plant lovers just like you and me.</p>
+           </div>
+
+       <!--gallery section-->
+  <br> <h1>Gallery</h1><br>
+ <div class="img-container">
+          <img class="image-box" src="gallery2.jpg"></img>
+
+           <img class="image-box" src="gallery1.jpg"></img>
+
+        <img class="image-box" src="gallery3.jpg"></img>
+
+
+       </div>
+ </div>
+
+ <!--beginning of right wrapper-->
+ <div class="right-wrapper">
+         <div class="section">
+         <h1><i class="fas fa-user-alt"></i> About Us</h1>
+         <img class="image-box" src="about.jpg" style="width:150px;height:200px;">
+         <p>We are Yash and Jyo, sisters who aim to play our part in the world. Yash aims to start her own community garden in the near. Jyo aims to be more academically inclined to botany. </p>
+   </div>
+         <br>
+           <div class="section">
+         <h1><i class="fas fa-map-marked-alt"></i> Location</h1>
+         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8149950.532543858!2d105.11908077932058!3d4.127919265627725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3034d3975f6730af%3A0x745969328211cd8!2sMalaysia!5e0!3m2!1sen!2smy!4v1598001561182!5m2!1sen!2smy" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+   </div>
+         <br>
+           <div class="section">
+         <h1><i class="fas fa-info-circle"></i>Visit Our Instagram Page!</h1>
+         <a href="https://www.instagram.com/botanigyal">
+         <img class="image-box" src="ig page.jpg" style="width:350px;height:350px;">
+       </a>
+   </div>
+ </div>
+ </div>
+ </div>
+ <script>
+ /*DROPDOWN BUTTON*/
+ var dropdown = document.getElementsByClassName("dropdown-btn");
+ var i;
+
+ for (i = 0; i < dropdown.length; i++) {
+   dropdown[i].addEventListener("click", function() {
+   this.classList.toggle("active");
+   var dropdownContent = this.nextElementSibling;
+   if (dropdownContent.style.display === "block") {
+   dropdownContent.style.display = "none";
+   } else {
+   dropdownContent.style.display = "block";
+   }
+   });
+ }
+     function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+     }
+
+     function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+     }
+  /* SEARCH MENU*/
+     function myFunction() {
+       var input, filter, ul, li, a, i;
+       input = document.getElementById("mySearch");
+       filter = input.value.toUpperCase();
+       ul = document.getElementById("myMenu");
+       li = ul.getElementsByTagName("li");
+       for (i = 0; i < li.length; i++) {
+         a = li[i].getElementsByTagName("a")[0];
+         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           li[i].style.display = "";
+         } else {
+           li[i].style.display = "none";
+         }
+       }
+     }
+</script>
+
+</body>
+
+</html>

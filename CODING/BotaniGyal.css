@@ -1,0 +1,197 @@
+  /*SIDE NAV BAR*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+  /*SEARCH BUTTON*/
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: White;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+  /*BOX*/
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background-image:url('plant.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+#content-wrapper{
+  display:flex;
+  flex-direction:column;
+  padding:2rem;
+  margin:3rem;
+  border:13px solid black;
+  background:white;
+}
+
+.header{
+  display:flex;
+  justify-content:center;
+  font-size:100px;
+  font-family: 'Martel', serif;
+  text-shadow: 1px 3px 2px grey;
+}
+
+#main-content-wrapper{
+  display:flex;
+  text-align:justify;
+}
+.left-wrapper{
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+}
+
+.about{
+  margin-bottom:20px;
+}
+.right-wrapper{
+  border-left:1px solid black;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+}
+
+.section{
+  margin-bottom:20px;
+}
+
+
+.img-container{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.image-box{
+  width:200px;
+  height:180px;
+  margin:10px;
+  box-shadow: 4px 4px 2px 1px #3c3c3c;
+}
+
+@media (max-width:1089px){
+  .header{
+    font-size:80px;
+  }
+}
+  /*FONT*/
+h2{
+  font-size: 18px;
+}
+  /*DROPDOWN*/
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.dropdown-btn {
+  padding: 6px 8px 6px 28px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Martel', serif;
+}
+a{
+
+	color:#006400;
+	font-size:15px;
+
+}

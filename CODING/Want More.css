@@ -1,0 +1,73 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background-image:url('plant.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  font-size: 20px;
+}
+#content-wrapper{
+  display:flex;
+  flex-direction:column;
+  padding:2rem;
+  margin:3rem;
+  border:13px solid black;
+  background:white;
+}
+
+.header{
+  display:flex;
+  justify-content:center;
+  font-size:80px;
+  font-family: 'Martel', serif;
+  text-shadow: 1px 3px 2px grey;
+}
+
+#main-content-wrapper{
+  display:flex;
+  text-align:justify;
+}
+.left-wrapper{
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+}
+
+.about{
+  margin-bottom:20px;
+}
+
+.section{
+  margin-bottom:20px;
+}
+
+@media (max-width:1089px){
+  .header{
+    font-size:80px;
+  }
+}
+
+a{
+
+	color:#556B2F;
+	font-size:20px;
+}
+
+.right-wrapper{
+  border-left:1px solid black;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+}
+
+.section{
+  margin-bottom:20px;
+}
